@@ -1,5 +1,20 @@
+@import "./styles/variables.css";
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+
+.action-btn {
+  background: $primary-color;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color: #fff;
+  padding: 16px 32px;
+  &:hover {
+    cursor: pointer;
+  }
 }
