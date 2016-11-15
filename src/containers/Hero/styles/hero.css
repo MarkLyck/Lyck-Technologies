@@ -33,4 +33,10 @@
       border-radius: 2px;
     }
   }
+  h3 {
+    color: rgba(255,255,255, 0.6);
+    font-weight: 100;
+    position: absolute;
+    bottom: 32px;
+  }
 }

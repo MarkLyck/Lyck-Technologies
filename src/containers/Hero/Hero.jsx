@@ -11,6 +11,7 @@ class Hero extends React.Component {
           <div className="special-underline"/>
         </div>
         <button className="action-btn">Contact Us</button>
+        <h3>When a static website just doesn't cut it!</h3>
       </div>
     )
   }
