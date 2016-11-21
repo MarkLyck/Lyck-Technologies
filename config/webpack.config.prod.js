@@ -5,6 +5,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var ManifestPlugin = require('webpack-manifest-plugin');
 var InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 var url = require('url');
 var paths = require('./paths');
 var getClientEnvironment = require('./env');
@@ -177,6 +178,10 @@ module.exports = {
     // <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     // In production, it will be an empty string unless you specify "homepage"
     // in `package.json`, in which case it will be the pathname of that URL.
+    new CopyWebpackPlugin([
+            // {output}/file.txt
+            { from: 'CNAME' }
+    ]),
     new InterpolateHtmlPlugin({
       PUBLIC_URL: publicUrl
     }),
