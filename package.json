@@ -1,7 +1,7 @@
 {
   "name": "lyck",
   "version": "0.1.0",
-  "homepage": "https://marklyck.github.io/Lyck-Technologies/",
+  "homepage": "http://lyck.io",
   "private": true,
   "devDependencies": {
     "autoprefixer": "6.5.1",
